@@ -1,0 +1,28 @@
+.side {
+  position: relative;
+  width: 100%;
+  padding-bottom: 2em;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1000px) {
+  .side {
+    width: 50%;
+    height: 100vh;
+    padding-bottom: 0em;
+  }
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}

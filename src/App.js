@@ -1,24 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import SideContainer from "./SideContainer";
+import Title from "./Title";
+import ImageTile from "./ImageTile";
+import LoginForm from "./LoginForm";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <SideContainer centered={false} color="#010048" side="left">
+        <Title color="white">Debería estar trabajando en elementos.</Title>
+        <ImageTile imageRef="code.png" height="100" width="100" alt="coding" />
+      </SideContainer>
+      <SideContainer centered={true} color="white" side="right">
+        <LoginForm />
+        <ImageTile imageRef="cute.png" height="100" width="100" alt="coding" />
+      </SideContainer>
     </div>
   );
 }

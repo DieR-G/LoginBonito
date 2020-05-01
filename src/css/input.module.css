@@ -1,0 +1,36 @@
+.textLbl{
+    font-family: "Lato", sans-serif;
+    position: absolute;
+    left: 1em;
+    top: 1em;
+    font-size: 1.2rem;
+    pointer-events: none;
+    font-weight: bold;
+    color: gray;
+    transition: ease 0.2s;
+}
+
+.entry{
+    font-size: 1.5em;
+    color: gray;
+    display: block;
+    width: 90%;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.entry:focus{
+    outline: none;
+    border-bottom: 3px solid darkblue;
+    transition: ease 0.1s;
+}
+
+.move{
+    top: -0.1em;
+    left: 15px;
+    transform: scale(.75);
+    color: darkblue;
+    transition: ease 0.2s;
+    margin-top: 0.1em;
+}
