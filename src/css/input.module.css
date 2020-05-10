@@ -22,7 +22,7 @@
 
 .entry:focus{
     outline: none;
-    border-bottom: 3px solid darkblue;
+    border-bottom: 2px solid;
     transition: ease 0.1s;
 }
 
@@ -30,7 +30,6 @@
     top: -0.1em;
     left: 15px;
     transform: scale(.75);
-    color: darkblue;
     transition: ease 0.2s;
     margin-top: 0.1em;
 }

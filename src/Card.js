@@ -2,12 +2,17 @@ import React from "react";
 import cardStyle from "./css/card.module.css";
 
 function Card(props) {
+  let header;
+  if (typeof props.cardTitle != "undefined") {
+    header = (
+      <div className={cardStyle.header}>
+        <span style={{marginLeft:'0.5em',color:props.color}}>{props.cardTitle}</span>
+      </div>
+    );
+  }
   return (
     <div className={cardStyle.card}>
-      <div className={cardStyle.header}>
-        <span>{props.cardTitle}</span>
-        <hr></hr>
-      </div>
+      {header}
       <div className={cardStyle.cardBody}>{props.children}</div>
     </div>
   );
